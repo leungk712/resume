@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif KR', sans-serif;
+  /*background-color: #F5F5F5;*/
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+#header {
+  background-image: url("https://images.unsplash.com/photo-1494783435443-c15feee0a80a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb29026032f43ef55c871ce01b30b117&auto=format&fit=crop&w=1351&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  /*color: #CBD8E0;*/
+  color: white;
+}
+
+.navbar, .navbar-brand {
+  font-size: 1.625rem;
+  background-color: #50729F /*#2874A6*/ /*#AED6F1*/;
+  padding: 0;
+  margin: 0;
+  opacity: 0.85;
+  color: white;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+#aboutMe {
+  margin-top: 20px;
+}
+
+#experience i {
+  font-size: 7rem;
+}
+
+.fa-code {
+  color: #E54D26;
+}
+
+.fa-css3-alt {
+  color: #379AD5;
+}
+
+.fa-js {
+  color: #F99D36;
+}
+
+.fa-python {
+  color: #FFE873;
+}
+
+.fa-certificate {
+  color: #FFD700;
+  margin-left: 10px;
+}
+
+.card-deck h5 {
+  font-weight: 600;
+}
+
+.card-deck p {
+  font-size: 1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+}
+
+section {
+  margin: 20px auto;
+}
+
+h1, h3 {
+  font-weight: 620;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+hr {
+  width: 75%;
+  border: 0.5px solid #CBD8E0;
+}
+
+a {
+  color: #5499C7;
+}
+
+a:hover {
+  color: #1A5276 !important;
+}
+
+h6 {
+  font-size: 1.75rem;
+}
+
+footer {
+  padding-top: 15px;
+  /*background: #CBD8E0;*/
+  background: #50729F;
+  height: 28vh;
+  opacity: .95;
+}
+
+.fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
+  font-size: 1.75rem;
+}
+
+
+
+/*Media Queries*/
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px){
+  #header h2 {
+    font-size: 1rem;
+    margin-top: 3%;
+  }
+  
+  #experience i {
+    font-size: 5rem;
+  }
+  
+  #experience h6 {
+    margin: 20px;
+  }
+}
