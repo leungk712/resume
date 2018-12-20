@@ -4,10 +4,10 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Serif KR', sans-serif;
-  /*background-color: #F5F5F5;*/
   background-color: white;
   font-size: 16px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 #header {
@@ -17,13 +17,12 @@ html, body {
   background-size: cover;
   padding-top: 10%;
   padding-bottom: 25%;
-  /*color: #CBD8E0;*/
   color: white;
 }
 
 .navbar, .navbar-brand {
   font-size: 1.625rem;
-  background-color: #364e68 /*#84a1be*/ /*#50729F*/ /*#2874A6*/ /*#AED6F1*/;
+  background-color: #50729F /*#2874A6*/ /*#AED6F1*/;
   padding: 0;
   margin: 0;
   opacity: 0.85;
@@ -64,7 +63,7 @@ html, body {
 }
 
 .card-deck h5 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .card-deck p {
@@ -73,7 +72,6 @@ html, body {
 
 .card-img-top {
   width: 100%;
-/*   height: 20vw; */
   height: auto;
 }
 
@@ -107,17 +105,13 @@ h6 {
 }
 
 footer {
-  padding-top: 15px;
-  /*background: #CBD8E0;*/
-  background: #364e68 /*#84a1be*/ /*#50729F*/;
-  height: 28vh;
-  opacity: .95;
+  padding: 15px 0;
+  background: #50729F;
 }
 
 .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
   font-size: 1.75rem;
 }
-
 
 
 /*Media Queries*/
@@ -140,5 +134,9 @@ footer {
   
   #experience h6 {
     margin: 20px;
+  }
+  
+  .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
+    font-size: 1.25rem;
   }
 }
