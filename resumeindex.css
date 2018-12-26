@@ -20,21 +20,22 @@ html, body {
   color: white;
 }
 
-.navbar, .navbar-brand {
+.navbar, .navbar-brand, .navbar a {
   font-size: 1.625rem;
-  background-color: #50729F /*#2874A6*/ /*#AED6F1*/;
-  padding: 0;
+  background-color: #4e709d /*#2874A6*/ /*#AED6F1*/  /*#50729F*/;
+  padding-left: 0.10rem;
   margin: 0;
-  opacity: 0.85;
+  color: white;
+  /*opacity: 0.85;*/
+}
+
+button {
+  background-color: white;
   color: white;
 }
 
-.navbar a {
-  color: white !important;
-}
-
 #aboutMe {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 #experience i {
@@ -59,7 +60,7 @@ html, body {
 
 .fa-certificate {
   color: #FFD700;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .card-deck h5 {
@@ -75,8 +76,13 @@ html, body {
   height: auto;
 }
 
+.card-body .btn {
+  background: #4e709d;
+  color: white;
+}
+
 section {
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 h1, h3 {
@@ -93,11 +99,14 @@ hr {
 }
 
 a {
-  color: #5499C7;
+  /*color: #5499C7;*/
+  color: black;
 }
 
 a:hover {
-  color: #1A5276 !important;
+  color: #005792 !important;
+  /*#1A5276*/
+  text-decoration: none;
 }
 
 h6 {
@@ -105,8 +114,9 @@ h6 {
 }
 
 footer {
-  padding: 15px 0;
-  background: #50729F;
+  padding: 1rem 0;
+  /*background: #50729F;*/
+  background: #4e709d;
 }
 
 .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
@@ -120,6 +130,11 @@ footer {
   #header h2 {
     font-size: 1.5rem;
   }
+  
+  .navbar-brand {
+    margin-left: 0.75rem;
+  }
+  
 }
 
 @media (max-width: 576px){
@@ -138,5 +153,13 @@ footer {
   
   .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
     font-size: 1.25rem;
+  }
+  
+  #linkedin a {
+    font-size: 1.25rem;
+  }
+  
+  .navbar-brand {
+    margin-left: 0.75rem;
   }
 }
