@@ -127,21 +127,25 @@ footer {
 
 /*Media Queries*/
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 768px) {
   #header h2 {
     font-size: 1.5rem;
   }
   
   .navbar-brand {
-    margin-left: 0.75rem;
+    padding-left: 0.25rem;
   }
   
 }
 
 @media (max-width: 576px){
+  #header {
+    height: 40vh;
+  }
+  
   #header h2 {
     font-size: 1rem;
-    margin-top: 3%;
+    margin-top: 1.45rem;
   }
   
   #experience i {
@@ -158,9 +162,5 @@ footer {
   
   .contact p {
     font-size: 0.95rem;
-  }
-  
-  .navbar-brand {
-    margin-left: 0.75rem;
   }
 }
