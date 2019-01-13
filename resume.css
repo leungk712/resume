@@ -153,11 +153,11 @@ footer {
   }
   
   .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   
-  #linkedin a {
-    font-size: 1.25rem;
+  .contact p {
+    font-size: 0.95rem;
   }
   
   .navbar-brand {
