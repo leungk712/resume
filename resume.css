@@ -34,9 +34,19 @@ button {
   color: white;
 }
 
-#aboutMe {
-  margin-top: 1.25rem;
+#about-me p {
+  font-size: 1.5rem;
+  padding-left: 0;
 }
+
+#profile-pic {
+  border: 4px solid #4E709D;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: left bottom;
+  display: inline;
 
 #experience i {
   font-size: 7rem;
