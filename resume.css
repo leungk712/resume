@@ -36,7 +36,6 @@ button {
 
 #about-me p {
   font-size: 1.5rem;
-  padding-left: 0;
 }
 
 #profile-pic {
@@ -47,6 +46,7 @@ button {
   object-fit: cover;
   object-position: left bottom;
   display: inline;
+}
 
 #experience i {
   font-size: 7rem;
