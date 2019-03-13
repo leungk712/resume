@@ -1,13 +1,11 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
   font-family: 'Noto Serif KR', sans-serif;
   background-color: white;
-  font-size: 16px;
   text-align: center;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #header {
@@ -15,27 +13,43 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 25%;
+  padding: 10% 0 25% 0;
   color: white;
 }
 
 .navbar, .navbar-brand, .navbar a {
   font-size: 1.625rem;
-  background-color: #4e709d /*#2874A6*/ /*#AED6F1*/  /*#50729F*/;
-  padding-left: 0.10rem;
+  background-color: #4e709d;
+  padding-left: .1rem;
   margin: 0;
   color: white;
-  /*opacity: 0.85;*/
+}
+
+.navbar-container {
+  padding: 0;
+  margin: 0;
 }
 
 button {
   background-color: white;
   color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  width: auto;
+  height: 3rem;
+  background: white;
+  padding: 0.5rem 0;
 }
 
 #about-me p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+#about-me p, #name {
+  text-align: left;
 }
 
 #profile-pic {
@@ -64,8 +78,8 @@ button {
   color: #F99D36;
 }
 
-.fa-bold { 
-  color: #563D7C; 
+.fa-bold {
+  color: #563D7C;
 }
 
 .fa-certificate {
@@ -100,6 +114,10 @@ h1, h3 {
   font-weight: 620;
 }
 
+h6 {
+  font-size: 1.75rem;
+}
+
 p {
   font-size: 1.25rem;
 }
@@ -110,30 +128,22 @@ hr {
 }
 
 a {
-  /*color: #5499C7;*/
   color: black;
 }
 
 a:hover {
   color: #005792 !important;
-  /*#1A5276*/
   text-decoration: none;
-}
-
-h6 {
-  font-size: 1.75rem;
 }
 
 footer {
   padding: 1rem 0;
-  /*background: #50729F;*/
   background: #4e709d;
 }
 
 .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
   font-size: 1.75rem;
 }
-
 
 /*Media Queries*/
 
@@ -142,10 +152,13 @@ footer {
     font-size: 1.5rem;
   }
   
-  .navbar-brand {
-    padding-left: 0.25rem;
+  #about-me p {
+    font-size: 1.25rem;
   }
   
+  #about-me p, #name {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px){
@@ -154,8 +167,8 @@ footer {
   }
   
   #header h2 {
-    font-size: 1rem;
-    margin-top: 1.45rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
   }
   
   #experience i {
@@ -171,6 +184,6 @@ footer {
   }
   
   .contact p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
