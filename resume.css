@@ -1,11 +1,27 @@
-html, body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   height: 100%;
   width: 100%;
   font-family: 'Noto Serif KR', sans-serif;
-  background-color: white;
+  background-color: #fff;
   text-align: center;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+}
+
+h1, h3 {
+  font-weight: 620;
+}
+
+h6 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 #header {
@@ -14,37 +30,46 @@ html, body {
   background-position: center;
   background-size: cover;
   padding: 10% 0 25% 0;
+  margin: 0;
+}
+
+#header, .navbar, .navbar-brand, .navbar a, .hamburger-btn, .card-body .btn {
   color: white;
 }
 
 .navbar, .navbar-brand, .navbar a {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   background-color: #4e709d;
   padding-left: .1rem;
-  margin: 0;
-  color: white;
 }
 
-.navbar-container {
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  background-color: white;
-  color: white;
-  padding: 0;
-  margin: 0;
+.bar, .bar-mobile {
+  background-color: #4e709d;
+  opacity: 0.8;
+  font-size: 1.25rem;
 }
 
 .bar {
   width: auto;
   height: 3rem;
-  background: white;
-  padding: 0.5rem 0;
+  padding: 0.75rem;
 }
 
-#about-me p {
+.bar a {
+  padding: 0 0.5rem;
+}
+
+.bar-icon, #about-me p {
+  font-size: 1.25rem;
+}
+
+.bar-mobile {
+  display: none;
+  height: 2rem;
+}
+
+.bar-mobile a {
+  padding: 1rem 0.5rem;
   font-size: 1.25rem;
 }
 
@@ -62,7 +87,11 @@ button {
   display: inline;
 }
 
-#experience i {
+#skills, #portfolio {
+  background: #fafafa;
+}
+
+#skills i {
   font-size: 7rem;
 }
 
@@ -78,13 +107,13 @@ button {
   color: #F99D36;
 }
 
-.fa-bold {
+.fa-bootstrap {
   color: #563D7C;
 }
 
-.fa-certificate {
-  color: #FFD700;
-  margin-left: 0.625rem;
+.card-body {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-deck h5 {
@@ -101,30 +130,14 @@ button {
   object-fit: cover;
 }
 
-.card-body .btn {
+.card-body .btn, footer {
   background: #4e709d;
-  color: white;
-}
-
-section {
-  margin: 1.25rem auto;
-}
-
-h1, h3 {
-  font-weight: 620;
-}
-
-h6 {
-  font-size: 1.75rem;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 hr {
-  width: 75%;
+  width: 25%;
   border: 0.5px solid #CBD8E0;
+  margin: 0.5rem auto 0;
 }
 
 a {
@@ -137,12 +150,12 @@ a:hover {
 }
 
 footer {
-  padding: 1rem 0;
-  background: #4e709d;
+  padding: 0.5rem 0;
 }
 
-.fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
-  font-size: 1.75rem;
+.contact-icon {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*Media Queries*/
@@ -152,6 +165,10 @@ footer {
     font-size: 1.5rem;
   }
   
+  #profile-pic {
+    margin-top: 2rem;
+  }
+  
   #about-me p {
     font-size: 1.25rem;
   }
@@ -159,6 +176,15 @@ footer {
   #about-me p, #name {
     text-align: center;
   }
+  
+  .bar {
+    display: none;
+  }
+  
+  .bar-mobile {
+    display: block;
+  }
+  
 }
 
 @media (max-width: 576px){
@@ -171,19 +197,11 @@ footer {
     margin-top: 1rem;
   }
   
-  #experience i {
+  #skills i {
     font-size: 5rem;
   }
   
   #experience h6 {
     margin: 20px;
-  }
-  
-  .fa-linkedin-in, .fa-at, .fa-phone, .fa-medium {
-    font-size: 1rem;
-  }
-  
-  .contact p {
-    font-size: 1rem;
   }
 }
