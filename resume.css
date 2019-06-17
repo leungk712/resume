@@ -49,7 +49,7 @@ p {
 .bar {
   width: auto;
   height: 3rem;
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 .bar a {
@@ -108,6 +108,14 @@ p {
   color: #563D7C;
 }
 
+.fa-node {
+  color: #72A761;
+}
+
+.fa-git-square {
+  color: #f05033;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -142,7 +150,7 @@ a {
 }
 
 a:hover {
-  color: #005792 !important;
+  color: #fff;
   text-decoration: none;
 }
 
