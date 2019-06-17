@@ -154,6 +154,10 @@ a:hover {
   text-decoration: none;
 }
 
+.github-btn:hover {
+  color: #005792;
+}
+
 footer {
   padding: 0.5rem 0;
 }
