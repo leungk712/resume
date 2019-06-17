@@ -157,7 +157,6 @@ a {
 
 .navbar-nav a:hover {
   background: #fff;
-  color: #005792 !important;
 }
 
 a:hover {
@@ -165,7 +164,7 @@ a:hover {
   text-decoration: none;
 }
 
-.github-btn:hover {
+#education a:hover, .navbar-nav a:hover, .github-btn:hover  {
   color: #005792;
 }
 
