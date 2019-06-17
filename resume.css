@@ -139,6 +139,12 @@ p {
   background: #4e709d;
 }
 
+.card-btn:hover {
+  background: #fff;
+  color: #005972;
+  border: 3px solid #005972;
+}
+
 hr {
   width: 25%;
   border: 0.5px solid #CBD8E0;
@@ -147,6 +153,11 @@ hr {
 
 a {
   color: black;
+}
+
+.navbar-nav a:hover {
+  background: #fff;
+  color: #005792 !important;
 }
 
 a:hover {
