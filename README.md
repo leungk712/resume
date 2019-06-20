@@ -1,1 +1,1 @@
-# resume (Complete project link https://leungk712.github.io/resume/)
+# [Resume] (https://leungk712.github.io/resume/)
