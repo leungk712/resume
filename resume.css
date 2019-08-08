@@ -1,12 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ --color-white: #fff; 
+}
+
 html, body {
   height: 100%;
   width: 100%;
   font-family: 'Noto Serif KR', sans-serif;
-  background-color: #fff;
+  background-color: var(--color-white);
   text-align: center;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 h1, h3 {
@@ -22,16 +30,13 @@ p {
 }
 
 #header {
-  background-image: url("diego-jimenez-258123-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("diego-jimenez-258123-unsplash.jpg") no-repeat center/cover;
   padding: 10% 0 25% 0;
   margin: 0;
 }
 
 #header, .navbar, .navbar-brand, .navbar a, .hamburger-btn, .card-body .btn {
-  color: white;
+  color: var(--color-white);
 }
 
 .navbar, .navbar-brand, .navbar a {
@@ -140,7 +145,7 @@ p {
 }
 
 .card-btn:hover {
-  background: #fff;
+  background: var(--color-white);
   color: #005972;
   border: 3px solid #005972;
 }
@@ -156,11 +161,11 @@ a {
 }
 
 .navbar-nav a:hover {
-  background: #fff;
+  background: var(--color-white);
 }
 
 a:hover {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }
 
