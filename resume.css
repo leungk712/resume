@@ -30,7 +30,7 @@ p {
 }
 
 #header {
-  background: url("diego-jimenez-258123-unsplash.jpg") no-repeat center/cover;
+  background: url(imgs/diego-jimenez-258123-unsplash.jpg) no-repeat center/cover;
   padding: 10% 0 25% 0;
   margin: 0;
 }
